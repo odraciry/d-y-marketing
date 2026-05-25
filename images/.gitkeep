@@ -1,0 +1,6 @@
+# Coloque suas imagens refinadas aqui.
+# Exemplo de estrutura:
+#   hero/main.jpg
+#   hero/gallery/01.jpg … 07.jpg
+#   instagram/01.jpg … 06.jpg
+# Depois atualize os caminhos em images.config.js

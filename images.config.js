@@ -18,13 +18,13 @@ const SITE_LINKS = {
 const SITE_IMAGES = {
   hero: {
     main: {
-      src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=750&fit=crop&q=80',
-      alt: 'Equipe em reunião de estratégia',
+      src: './images/hero/main.png',
+      alt: 'Dashboard D&Y Marketing — campanhas, faturamento e desempenho por canal',
     },
     gallery: [
       { src: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=320&h=480&fit=crop&q=80', alt: 'Social Media' },
       { src: 'https://images.unsplash.com/photo-1533750349088-c7478715769e?w=360&h=280&fit=crop&q=80', alt: 'Conteúdo' },
-      { src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=480&h=300&fit=crop&q=80', alt: 'Performance' },
+      { src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=480&h=300&fit=crop&q=75', alt: 'Performance' },
       { src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=320&h=400&fit=crop&q=80', alt: 'Estratégia' },
       { src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?w=320&h=480&fit=crop&q=80', alt: 'Campanhas' },
       { src: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=360&h=320&fit=crop&q=80', alt: 'Branding' },
@@ -34,12 +34,14 @@ const SITE_IMAGES = {
 
   instagram: {
     feed: [
-      { src: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400&h=400&fit=crop&q=80', alt: 'Post Instagram 1' },
-      { src: 'https://images.unsplash.com/photo-1533750349088-c7478715769e?w=400&h=400&fit=crop&q=80', alt: 'Post Instagram 2' },
-      { src: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=400&h=400&fit=crop&q=80', alt: 'Post Instagram 3' },
-      { src: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop&q=80', alt: 'Post Instagram 4' },
-      { src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=400&fit=crop&q=80', alt: 'Post Instagram 5' },
-      { src: 'https://images.unsplash.com/photo-1556761175-5973dc0d32e7?w=400&h=400&fit=crop&q=80', alt: 'Post Instagram 6' },
+      { src: './images/instagram/feed-1.png', alt: 'Post Instagram 1' },
+      { src: './images/instagram/feed-2.png', alt: 'Post Instagram 2' },
+      { src: './images/instagram/feed-3.png', alt: 'Post Instagram 3' },
+      { src: './images/instagram/feed-4.png', alt: 'Post Instagram 4' },
+      { src: './images/instagram/feed-5.png', alt: 'Post Instagram 5' },
+      { src: './images/instagram/feed-6.png', alt: 'Post Instagram 6' },
+      { src: './images/instagram/feed-7.png', alt: 'Post Instagram 6' },
+      { src: './images/instagram/feed-8.png', alt: 'Post Instagram 6' },
     ],
   },
 
@@ -47,29 +49,28 @@ const SITE_IMAGES = {
     'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=200&h=120&fit=crop&q=70',
     'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=200&h=120&fit=crop&q=70',
     'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=200&h=120&fit=crop&q=70',
-    'https://images.unsplash.com/photo-1542744173-8e7e5347bb63?w=200&h=120&fit=crop&q=70',
     'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&h=120&fit=crop&q=70',
   ],
 
   portfolio: {
-    hero: { src: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&h=600&fit=crop&q=80', alt: 'Case destaque' },
+    hero: { src: './images/portifolio/engajamento.jpg', alt: 'Case destaque' },
     branding: { src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&h=400&fit=crop&q=80', alt: 'Branding' },
-    strategy: { src: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=500&h=400&fit=crop&q=80', alt: 'Estratégia' },
-    content: { src: 'https://images.unsplash.com/photo-1533750349088-c7478715769e?w=400&h=600&fit=crop&q=80', alt: 'Conteúdo' },
-    performance: { src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=400&fit=crop&q=80', alt: 'Performance' },
+    strategy: { src: './images/portifolio/estrategia.jpg', alt: 'Estratégia' },
+    content: { src: './images/portifolio/conteudo.jpg', alt: 'Conteúdo' },
+    performance: { src: './images/portifolio/performance.jpg', alt: 'Performance' },
   },
 
   services: {
-    social: { src: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=500&h=340&fit=crop&q=80', alt: 'Social Media' },
-    branding: { src: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=340&fit=crop&q=80', alt: 'Branding' },
-    traffic: { src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=340&fit=crop&q=80', alt: 'Tráfego Pago' },
-    digital: { src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=340&fit=crop&q=80', alt: 'Marketing Digital' },
-    landing: { src: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&h=340&fit=crop&q=80', alt: 'Landing Pages' },
+    social: { src: './images/services/social-midia.jpg', alt: 'Social Media' },
+    branding: { src: './images/services/branding.jpg', alt: 'Branding' },
+    traffic: { src: './images/services/trafego-pago.jpg', alt: 'Tráfego Pago' },
+    digital: { src: './images/services/marketing-digital.jpg', alt: 'Marketing Digital' },
+    // landing: { src: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&h=340&fit=crop&q=80', alt: 'Landing Pages' },
   },
 
   solution: {
-    back: { src: 'https://images.unsplash.com/photo-1556761175-5973dc0d32e7?w=500&h=600&fit=crop&q=80', alt: 'Consultoria' },
-    front: { src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=420&h=520&fit=crop&q=80', alt: 'Resultados' },
+    back: { src: './images/texture2.jpg', alt: 'Consultoria' },
+    front: { src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=420&h=520&fit=crop&q=75', alt: 'Painel de resultados e métricas' },
   },
 
   results: [
@@ -93,5 +94,5 @@ const SITE_IMAGES = {
   ],
 
   caseQuote: { src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&q=80', alt: 'Cliente' },
-  ctaBg: { src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=600&fit=crop&q=70', alt: '' },
+  ctaBg: { src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&q=60', alt: '' },
 };

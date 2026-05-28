@@ -23,6 +23,12 @@
       if (!data || !data.src) return;
       el.src = data.src;
       if (data.alt) el.alt = data.alt;
+      if (el.tagName === 'IMG' && !el.hasAttribute('loading')) {
+        el.loading = 'lazy';
+      }
+      if (el.tagName === 'IMG' && !el.hasAttribute('decoding')) {
+        el.decoding = 'async';
+      }
     });
   }
 
@@ -45,7 +51,7 @@
   }
 
   function buildMarquee() {
-    const labels = ['Social Media', 'Tráfego Pago', 'Branding', 'Landing Pages', 'Marketing 360°'];
+    const labels = ['Social Media', 'Tráfego Pago', 'Branding', 'Marketing 360°'];
     const imgs = SITE_IMAGES.marquee || [];
     const inners = [
       document.getElementById('marqueeInner1'),
@@ -75,6 +81,7 @@
   const navMenu = document.getElementById('navMenu');
   const navOverlay = document.getElementById('navOverlay');
   const navLinks = document.getElementById('navLinks');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function setNavOpen(open) {
     navMenu.classList.toggle('open', open);
@@ -103,10 +110,27 @@
   navOverlay.addEventListener('click', closeNav);
 
   navLinks.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', closeNav);
+    link.addEventListener('click', function (e) {
+      const href = link.getAttribute('href');
+      if (href && href.charAt(0) === '#') {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          closeNav();
+          const offset = (header.offsetHeight || 80) + 16;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top: top, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+        } else {
+          closeNav();
+        }
+      } else {
+        closeNav();
+      }
+    });
   });
 
   const revealEls = document.querySelectorAll('.reveal');
+
   const revealObserver = new IntersectionObserver(
     function (entries) {
       entries.forEach(function (entry) {
@@ -151,16 +175,20 @@
     counterObserver.observe(el);
   });
 
-  const heroReveals = document.querySelectorAll('.hero-top .reveal, .hero-stats-wrap.reveal');
+  const heroReveals = document.querySelectorAll('.hero-top .reveal, .hero-metrics-wrap.reveal');
   heroReveals.forEach(function (el, i) {
-    el.style.transitionDelay = i * 0.1 + 's';
-    setTimeout(function () {
+    if (!prefersReducedMotion) el.style.transitionDelay = i * 0.08 + 's';
+    if (prefersReducedMotion) {
       el.classList.add('visible');
-    }, 150 + i * 100);
+    } else {
+      setTimeout(function () {
+        el.classList.add('visible');
+      }, 120 + i * 80);
+    }
   });
 
   const galleryCards = document.querySelectorAll('.gallery-card[data-speed]:not([aria-hidden="true"])');
-  if (galleryCards.length && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+  if (galleryCards.length && !prefersReducedMotion) {
     let ticking = false;
     window.addEventListener(
       'scroll',

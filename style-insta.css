@@ -356,7 +356,7 @@ body{
   .see-more{
     width:100%;
     justify-content:center;
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
     font-size:16px;
   }
 }
@@ -381,5 +381,5 @@ body{
 
 .bottom-button{
   display: flex;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }

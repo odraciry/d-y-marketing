@@ -20,7 +20,7 @@ body{
 }
 
 .instagram-section .container{
-  width:min(1280px,92%);
+  /* width:min(1280px,92%); */
   margin:0 auto;
 }
 
@@ -278,6 +278,7 @@ body{
   font-weight:500;
 
   transition:var(--transition);
+  margin: 0 auto;
 }
 
 .see-more:hover{
@@ -355,7 +356,7 @@ body{
   .see-more{
     width:100%;
     justify-content:center;
-    margin-top: 4rem;
+    margin-top: 8rem;
     font-size:16px;
   }
 }
@@ -376,4 +377,9 @@ body{
   .post-card{
     border: 2px solid rgba(255, 255, 255, 0.027);
   }
+}
+
+.bottom-button{
+  display: flex;
+  margin-top: 2rem;
 }

@@ -2,23 +2,23 @@
  * CONFIGURAÇÃO DE IMAGENS E LINKS — D&Y Marketing
  * =============================================
  * Para trocar uma imagem: altere apenas o `src` abaixo.
- * Caminho local recomendado: images/pasta/arquivo.jpg
- *   Ex.: images/hero/main.jpg
+ * Caminho local recomendado: images/pasta/arquivo.webp
+ *   Ex.: images/hero/main.webp
  *
  * No HTML, cada <img> usa data-img="chave.da.imagem"
  * Ex.: data-img="hero.main" → SITE_IMAGES.hero.main
  */
 
 const SITE_LINKS = {
-  instagram: 'https://www.instagram.com/dymarketing/', // ← URL do perfil
-  instagramHandle: '@dymarketing', // ← @ exibido nos ganchos
+  instagram: 'https://www.instagram.com/dey.marketing/', // ← URL do perfil
+  instagramHandle: '@dey.marketing', // ← @ exibido nos ganchos
   whatsapp: '5511999999999',
 };
 
 const SITE_IMAGES = {
   hero: {
     main: {
-      src: './images/hero/main.png',
+      src: './images/hero/main.webp',
       alt: 'Dashboard D&Y Marketing — campanhas, faturamento e desempenho por canal',
     },
     gallery: [
@@ -34,14 +34,14 @@ const SITE_IMAGES = {
 
   instagram: {
     feed: [
-      { src: './images/instagram/feed-1.png', alt: 'Post Instagram 1' },
-      { src: './images/instagram/feed-2.png', alt: 'Post Instagram 2' },
-      { src: './images/instagram/feed-3.png', alt: 'Post Instagram 3' },
-      { src: './images/instagram/feed-4.png', alt: 'Post Instagram 4' },
-      { src: './images/instagram/feed-5.png', alt: 'Post Instagram 5' },
-      { src: './images/instagram/feed-6.png', alt: 'Post Instagram 6' },
-      { src: './images/instagram/feed-7.png', alt: 'Post Instagram 6' },
-      { src: './images/instagram/feed-8.png', alt: 'Post Instagram 6' },
+      { src: './images/instagram/feed-1.webp', alt: 'Post Instagram 1' },
+      { src: './images/instagram/feed-2.webp', alt: 'Post Instagram 2' },
+      { src: './images/instagram/feed-3.webp', alt: 'Post Instagram 3' },
+      { src: './images/instagram/feed-4.webp', alt: 'Post Instagram 4' },
+      { src: './images/instagram/feed-5.webp', alt: 'Post Instagram 5' },
+      { src: './images/instagram/feed-6.webp', alt: 'Post Instagram 6' },
+      { src: './images/instagram/feed-7.webp', alt: 'Post Instagram 6' },
+      { src: './images/instagram/feed-8.webp', alt: 'Post Instagram 6' },
     ],
   },
 
@@ -53,24 +53,24 @@ const SITE_IMAGES = {
   ],
 
   portfolio: {
-    hero: { src: './images/portifolio/engajamento.jpg', alt: 'Case destaque' },
+    hero: { src: './images/portifolio/engajamento.webp', alt: 'Case destaque' },
     branding: { src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&h=400&fit=crop&q=80', alt: 'Branding' },
-    strategy: { src: './images/portifolio/estrategia.jpg', alt: 'Estratégia' },
-    content: { src: './images/portifolio/conteudo.jpg', alt: 'Conteúdo' },
-    performance: { src: './images/portifolio/performance.jpg', alt: 'Performance' },
+    strategy: { src: './images/portifolio/estrategia.webp', alt: 'Estratégia' },
+    content: { src: './images/portifolio/conteudo.webp', alt: 'Conteúdo' },
+    performance: { src: './images/portifolio/performance.webp', alt: 'Performance' },
   },
 
   services: {
-    social: { src: './images/services/social-midia.jpg', alt: 'Social Media' },
-    branding: { src: './images/services/branding.jpg', alt: 'Branding' },
-    traffic: { src: './images/services/trafego-pago.jpg', alt: 'Tráfego Pago' },
-    digital: { src: './images/services/marketing-digital.jpg', alt: 'Marketing Digital' },
+    social: { src: './images/services/social-midia.webp', alt: 'Social Media' },
+    branding: { src: './images/services/branding.webp', alt: 'Branding' },
+    traffic: { src: './images/services/trafego-pago.webp', alt: 'Tráfego Pago' },
+    digital: { src: './images/services/marketing-digital.webp', alt: 'Marketing Digital' },
     // landing: { src: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&h=340&fit=crop&q=80', alt: 'Landing Pages' },
   },
 
   solution: {
-    back: { src: './images/texture2.jpg', alt: 'Consultoria' },
-    front: { src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=420&h=520&fit=crop&q=75', alt: 'Painel de resultados e métricas' },
+    back: { src: './images/texture.webp', alt: 'Consultoria' },
+    front: { src: './images/notebook.webp', alt: 'Painel de resultados e métricas' },
   },
 
   results: [
@@ -81,10 +81,10 @@ const SITE_IMAGES = {
   ],
 
   process: [
-    { src: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=220&fit=crop&q=80', alt: 'Diagnóstico' },
-    { src: 'https://images.unsplash.com/photo-1542744173-8e7e5347bb63?w=400&h=220&fit=crop&q=80', alt: 'Estratégia' },
-    { src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=220&fit=crop&q=80', alt: 'Execução' },
-    { src: 'https://images.unsplash.com/photo-1556761175-5973dc0d32e7?w=400&h=220&fit=crop&q=80', alt: 'Escala' },
+    { src: './images/process/diagnostico.webp', alt: 'Diagnóstico' },
+    { src: './images/process/estrategia.webp', alt: 'Estratégia' },
+    { src: './images/process/execucao.webp', alt: 'Execução' },
+    { src: './images/process/escala.webp', alt: 'Escala' },
   ],
 
   testimonials: [
@@ -94,5 +94,5 @@ const SITE_IMAGES = {
   ],
 
   caseQuote: { src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&q=80', alt: 'Cliente' },
-  ctaBg: { src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&h=600&fit=crop&q=60', alt: '' },
+  ctaBg: { src: './images/fundo.webp', alt: '' },
 };

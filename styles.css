@@ -138,7 +138,7 @@ img { max-width: 100%; display: block; object-fit: cover; }
   font-style: normal;
   line-height: 1;
   letter-spacing: 0.01em;
-  background: linear-gradient(360deg, var(--green) 0%, #afdf03 10%, var(--purple) 100%);
+  background: linear-gradient(360deg, var(--green) 0%, #afdf03 45%, var(--purple) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
